@@ -1,6 +1,5 @@
 //THIS IS A SIMPLE CALCULATOR PROGRAM
 
-
 #include <stdio.h>
 #include <stdlib.h>
 
