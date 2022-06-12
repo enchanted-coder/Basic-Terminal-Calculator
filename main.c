@@ -4,10 +4,10 @@
 #include <stdlib.h>
 
 
-void addFun();
-void minFun();
-void mulFun();
-void divFun();
+double addFun(double i, double j);
+double minFun(double k, double l);
+double mulFun(double m, double n);
+double divFun(double o, double p);
 
 int main(){
     char type;
@@ -16,74 +16,63 @@ int main(){
     scanf("%c", &type);
 
     if(type == 'a'){
-        printf("***ADDITION***\n");
-        addFun();
+    printf("***ADDITION***\n");
+    double num1;
+    double num2;
+    printf("First Number: ");
+    scanf("%lf", &num1);
+    printf("Second Number: ");
+    scanf("%lf", &num2);
+    printf("= %f \n---------------\n", addFun(num1, num2));
+        
         
     }else if(type == 's'){
-        printf("***SUBTRACTION***\n");
-        minFun();
+    printf("***SUBTRACTION***\n");
+    double num1;
+    double num2;
+    printf("First Number: ");
+    scanf("%lf", &num1);
+    printf("Second Number: ");
+    scanf("%lf", &num2);
+    printf("= %f \n---------------\n", minFun(num1, num2));
     }else if(type == 'm'){
-        printf("***MULTIPLICATION***\n");
-        mulFun();
+    printf("***MULTIPLICATION***\n");
+    double num1;
+    double num2;
+    printf("First Number: ");
+    scanf("%lf", &num1);
+    printf("Second Number: ");
+    scanf("%lf", &num2);
+    printf("= %f \n---------------\n", mulFun(num1, num2));
+        
     }else if(type == 'd'){
         printf("***DIVISION***\n");
-        divFun();
+    double num1;
+    double num2;
+    printf("First Number: ");
+    scanf("%lf", &num1);
+    printf("Second Number: ");
+    scanf("%lf", &num2);
+    printf("= %f \n---------------\n", divFun(num1, num2));
     }else{
         printf("ERROR! Give valid operator!\n");
     }
-
     return 0;
 }
-void addFun(){
-    double i;
-    double j;
-    printf("First Number: ");
-    scanf("%lf", &i);
-    printf("Second Number: ");
-    scanf("%lf", &j);
-    printf("= %f \n---------------\n", i + j);
+double addFun(double i, double j){
+    return i+j;
+}
 
-
-    return;
+double minFun(double k, double l){
+    return k-l;
 
 }
 
-void minFun(){
-    double k;
-    double l;
-    printf("First Number: ");
-    scanf("%lf", &k);
-    printf("Second Number: ");
-    scanf("%lf", &l);
-    printf("= %f\n--------------\n", k - l);
-    return;
-
-
+double mulFun(double m, double n){
+    return m*n;
 }
 
-void mulFun(){
-    double m;
-    double n;
-    printf("First number: ");
-    scanf("%lf", &m);
-    printf("Second number: ");
-    scanf("%lf", &n);
-    printf("= %f\n-------------\n", m*n);
-
-    return;
-}
-
-void divFun(){
-    double o;
-    double p;
-    printf("First number: ");
-    scanf("%lf", &o);
-    printf("Second number: ");
-    scanf("%lf", &p);
-    printf("= %f\n-------------\n", o/p);
-
-    return;
-
-
+double divFun(double o, double p){
+    return o/p;
 }
 
