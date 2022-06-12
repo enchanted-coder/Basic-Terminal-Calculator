@@ -80,4 +80,5 @@ void calcFunc(){
     }else{
         printf("ERROR! Give valid operator!\n");
     }
+    return;
 }
