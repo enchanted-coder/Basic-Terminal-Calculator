@@ -1,7 +1,7 @@
 # Calculator
 
-On Linux
-Clone this repository <br/>
-cd into Calculator
-chmod +x a.out to give permissions
+On Linux:<br />
+Clone this repository <br />
+cd into Calculator<br />
+chmod +x a.out to give permissions <br />
 execute ./a.out
