@@ -8,8 +8,31 @@ double addFun(double i, double j);
 double minFun(double k, double l);
 double mulFun(double m, double n);
 double divFun(double o, double p);
+void calcFunc();
 
 int main(){
+    calcFunc();
+    
+    return 0;
+}
+double addFun(double i, double j){
+    return i+j;
+}
+
+double minFun(double k, double l){
+    return k-l;
+
+}
+
+double mulFun(double m, double n){
+    return m*n;
+}
+
+double divFun(double o, double p){
+    return o/p;
+}
+
+void calcFunc(){
     char type;
     printf("Welcome to Calculator\n-----------------------\n");
     printf("What operator do you want to work with: \na for addition\ns for subtraction\nm for multiplication\nd for division\n-------------\n");
@@ -57,22 +80,4 @@ int main(){
     }else{
         printf("ERROR! Give valid operator!\n");
     }
-    return 0;
 }
-double addFun(double i, double j){
-    return i+j;
-}
-
-double minFun(double k, double l){
-    return k-l;
-
-}
-
-double mulFun(double m, double n){
-    return m*n;
-}
-
-double divFun(double o, double p){
-    return o/p;
-}
-
