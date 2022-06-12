@@ -8,7 +8,6 @@ void addFun();
 void minFun();
 void mulFun();
 void divFun();
-char opFUn(char type, char a, char b, char c, char d);
 
 int main(){
     char type;
