@@ -3,16 +3,16 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-
+//these are function prototypes
 double addFun(double i, double j);
 double minFun(double k, double l);
 double mulFun(double m, double n);
 double divFun(double o, double p);
 void calcFunc();
-
+//start here
 int main(){
-    calcFunc();
-    
+    calcFunc(); //this calls our function which does all the math and calls all other functions inside it
+                
     return 0;
 }
 double addFun(double i, double j){
