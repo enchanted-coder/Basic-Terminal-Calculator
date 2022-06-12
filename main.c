@@ -2,6 +2,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <math.h>
 
 //these are function prototypes
 double addFun(double i, double j);
@@ -9,6 +10,7 @@ double minFun(double k, double l);
 double mulFun(double m, double n);
 double divFun(double o, double p);
 void calcFunc();
+
 //start here
 int main(){
     calcFunc(); //this calls our function which does all the math and calls all other functions inside it
@@ -40,8 +42,7 @@ void calcFunc(){
 
     if(type == 'a'){
     printf("***ADDITION***\n");
-    double num1;
-    double num2;
+    double num1, num2;
     printf("First Number: ");
     scanf("%lf", &num1);
     printf("Second Number: ");
@@ -51,8 +52,7 @@ void calcFunc(){
         
     }else if(type == 's'){
     printf("***SUBTRACTION***\n");
-    double num1;
-    double num2;
+    double num1, num2;
     printf("First Number: ");
     scanf("%lf", &num1);
     printf("Second Number: ");
@@ -60,8 +60,7 @@ void calcFunc(){
     printf("= %f \n---------------\n", minFun(num1, num2));
     }else if(type == 'm'){
     printf("***MULTIPLICATION***\n");
-    double num1;
-    double num2;
+    double num1, num2;
     printf("First Number: ");
     scanf("%lf", &num1);
     printf("Second Number: ");
@@ -70,8 +69,7 @@ void calcFunc(){
         
     }else if(type == 'd'){
         printf("***DIVISION***\n");
-    double num1;
-    double num2;
+    double num1, num2;
     printf("First Number: ");
     scanf("%lf", &num1);
     printf("Second Number: ");
